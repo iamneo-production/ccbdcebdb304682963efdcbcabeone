@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tic_tac_toe</title>
-
-  <!-- link the style.css and app.js files -->
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
+
+
 <body>
-  <!-- Enter your code here -->
+    <h1 id="header">Tic Tac Toe</h1>
+    <div class="box">
+        <div class="row">
+            <input type="button" value="" id="r00" class="btn" onclick="myFunction('r00')">
+            <input type="button" value="" id="r01" class="btn" onclick="myFunction('r01')">
+            <input type="button" value="" id="r02" class="btn" onclick="myFunction('r02')">
+        </div>
+        <div class="row">
+            <input type="button" value="" id="r10" class="btn" onclick="myFunction('r10')">
+            <input type="button" value="" id="r11" class="btn" onclick="myFunction('r11')">
+            <input type="button" value="" id="r12" class="btn" onclick="myFunction('r12')">
+        </div>
+        <div class="row">
+            <input type="button" value="" id="r20" class="btn" onclick="myFunction('r20')">
+            <input type="button" value="" id="r21" class="btn" onclick="myFunction('r21')">
+            <input type="button" value="" id="r22" class="btn" onclick="myFunction('r22')">
+        </div>
+    </div>
+    <div class="result-container">
+        <p class="result" id="p1">Player X's turn</p>
+    </div>
+    <div class="rst1">
+        <button id="reset" disabled="disabled" onclick="reloads()">Reset</button>
+    </div>
 </body>
+
 </html>
